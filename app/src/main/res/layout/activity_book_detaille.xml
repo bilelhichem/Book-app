@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetaille"
+    android:background="@color/bb"
+    android:padding="15dp"
+    android:id="@+id/maincont"
+    >
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:id="@+id/const1"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="#222227"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/bike"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            app:tint="#757575"
+            >
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book details"
+
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="210dp"
+        android:layout_height="245dp"
+        android:layout_below="@id/const1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/bb"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/car"
+        >
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ha"
+            android:scaleType="centerCrop"
+            >
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+<TextView
+    android:id="@+id/name0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/car"
+    android:text="Name de Book"
+    android:textSize="17dp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:layout_marginTop="11dp"
+    android:layout_marginLeft="20dp"
+
+    >
+
+</TextView>
+
+    <TextView
+        android:id="@+id/auth0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name0"
+        android:text="Autheur de Book"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:textColor="#757575"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auth0"
+        android:text="Description"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/klamdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc"
+        android:text="#######################################"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:textColor="#757575"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+
+        >
+
+    </TextView>
+
+
+
+    <LinearLayout
+        android:id="@+id/linsec"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:background="@drawable/backedit"
+        >
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/learnbook"
+        android:layout_width="153dp"
+        android:layout_height="45dp"
+        android:background="@drawable/backedit"
+        android:backgroundTint="@color/red"
+        android:text="Learn Book"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:layout_marginRight="5dp"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="153dp"
+        android:layout_height="45dp"
+        android:background="@drawable/backedit"
+        android:backgroundTint="@color/white"
+        android:text="Telecharger Book"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+       android:id="@+id/telechargerbook"
+        android:layout_marginLeft="5dp"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

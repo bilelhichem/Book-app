@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="@color/bb"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="250dp"
+        android:scaleType="centerCrop"
+        android:layout_height="250dp"
+        android:src="@drawable/bookmarks_pana"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/te1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/baloo_da"
+        android:text="Book Marks \n      Team"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+<TextView
+    android:id="@+id/te2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/te1"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:text="Hello everyone, we strive to provide you with the best service. We will do our best to provide you with the best books and stories"
+    android:textColor="#757575"
+    >
+</TextView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+android:background="@drawable/back1"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/back4"
+           android:text="Register"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signin"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@drawable/back3"
+android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+    android:text="Sign In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

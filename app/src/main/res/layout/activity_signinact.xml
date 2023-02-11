@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registeract"
+    android:background="@color/bb"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/back1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:tint="@color/white">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/te1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Sign In"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:fontFamily="@font/baloo_da"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="0.04"
+        android:layout_below="@id/back1"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/te2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back. \nYou've been missed!"
+
+        android:layout_below="@id/te1"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:textColor="#757575"
+        android:letterSpacing="0.03"
+
+        >
+
+    </TextView>
+
+    <EditText
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/te2"
+        android:hint="Enter your Email"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#757575"
+        android:background="@drawable/backedit"
+        android:id="@+id/emailsign"
+        >
+
+    </EditText>
+
+    <EditText
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailsign"
+        android:hint="Enter your password"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#757575"
+        android:id="@+id/passsign"
+        android:background="@drawable/backedit"
+        >
+    </EditText>
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passsign"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account ?"
+            android:textSize="16dp"
+            android:textColor="#757575"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startsign"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/back4"
+        android:text="sign In"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/lin"
+        android:layout_marginTop="25dp"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+</RelativeLayout>

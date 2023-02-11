@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registeract"
+    android:background="@color/bb"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/back1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:tint="@color/white">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/te1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Register"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:fontFamily="@font/baloo_da"
+        android:layout_marginTop="10dp"
+        android:letterSpacing="0.04"
+        android:layout_below="@id/back1"
+        >
+
+    </TextView>
+<TextView
+    android:id="@+id/te2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello , reggister with us \nto enjoy your time"
+    android:layout_below="@id/te1"
+    android:layout_marginTop="10dp"
+    android:textSize="16dp"
+    android:textColor="#757575"
+    android:letterSpacing="0.03"
+
+    >
+
+</TextView>
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/changecard"
+       android:layout_width="75dp"
+       android:layout_height="75dp"
+       app:cardCornerRadius="14dp"
+       android:layout_below="@id/te2"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="15dp"
+       app:cardBackgroundColor="@color/white"
+       >
+       <ImageView
+           android:id="@+id/imageprofil"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scaleType="centerCrop"
+           android:src="@drawable/ic_baseline_image_24"
+           >
+
+       </ImageView>
+
+   </androidx.cardview.widget.CardView>
+    <EditText
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/changecard"
+        android:hint="Enter Your name"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#757575"
+        android:background="@drawable/backedit"
+        android:id="@+id/nameuser"
+        >
+
+    </EditText>
+
+    <EditText
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/nameuser"
+        android:hint="Enter your Email"
+
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#757575"
+        android:background="@drawable/backedit"
+        android:id="@+id/emailsign"
+        >
+
+    </EditText>
+
+    <EditText
+        android:padding="10dp"
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailsign"
+        android:hint="Enter your password"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#757575"
+        android:id="@+id/passsign"
+        android:background="@drawable/backedit"
+        >
+    </EditText>
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passsign"
+        android:layout_marginTop="15dp"
+         android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have an account ?"
+            android:textSize="16dp"
+            android:textColor="#757575"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startreg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/back4"
+        android:text="Register"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_below="@id/lin"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+</RelativeLayout>

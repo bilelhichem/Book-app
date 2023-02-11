@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homefrag"
+    android:background="@color/bb"
+    android:padding="8dp"
+    >
+
+
+
+    <TextView
+        android:id="@+id/te1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which book do\nyou want to learn?"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="@font/baloo_da"
+
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+        <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/te1"
+        android:background="@drawable/backedit"
+        app:queryHint="Search Book"
+        app:iconifiedByDefault="false"
+        android:layout_marginTop="15dp"
+        >
+
+    </androidx.appcompat.widget.SearchView>
+
+  <LinearLayout
+      android:id="@+id/li"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/searchview"
+      android:layout_marginTop="15dp"
+      android:orientation="horizontal"
+      >
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          >
+
+          <TextView
+              android:id="@+id/textView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Popular Books"
+              android:textColor="@color/white"
+              android:textSize="17dp"
+              android:textStyle="bold"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+          </TextView>
+
+
+          <TextView
+              android:id="@+id/category"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Categorie"
+              android:textColor="#757575"
+              android:textSize="17dp"
+              android:textStyle="bold"
+              app:layout_constraintBottom_toBottomOf="parent"
+                 android:layout_marginRight="15dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+          </TextView>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recli"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/li"
+
+        />
+
+
+</RelativeLayout>

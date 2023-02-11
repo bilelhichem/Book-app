@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".changeinfo"
+    android:padding="20dp"
+    android:background="@color/bb"
+    android:id="@+id/r12"
+    >
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:tint="@color/white">
+    </ImageView>
+
+    <Switch
+        android:letterSpacing="0.05"
+        android:checked="false"
+        android:textOn="on"
+        android:textOff="off"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/switch1"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If You Want change Image Profil"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:layout_below="@id/back2"
+        >
+
+    </Switch>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/changecard"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:cardCornerRadius="14dp"
+        android:layout_below="@id/switch1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="@color/white"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/changeimgpro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_image_24"
+            >
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <Switch
+        android:letterSpacing="0.05"
+        android:checked="false"
+        android:textOn="on"
+        android:textOff="off"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/switch2"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If You Want change Name Profil"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:layout_below="@id/changecard"
+        >
+
+    </Switch>
+
+
+    <EditText
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/switch2"
+        android:hint="Enter Your name"
+        android:layout_marginTop="25dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="#757575"
+        android:background="@drawable/backedit"
+        android:id="@+id/changenameuser"
+        android:visibility="gone"
+        >
+
+    </EditText>
+
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Modifier"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/backedit"
+        android:backgroundTint="@color/red"
+        android:text="Modifier"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
